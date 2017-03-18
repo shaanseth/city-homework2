@@ -1,30 +1,33 @@
 //wait for the DOM elements to load before executing
 $(document).ready(function() {
   //wait for an item on dropdown menu to be clicked
-  $(".dropdown").on("click", function() {
+  $(".dropdown").on("click", function () {
     //prevent the click from refreshing the page
     // event.preventDefault();
     //pull out value of option selected from dropdown menu
-    var value = (this).val()
+    var value = (this).val();
     //if NYC is selected background changes to NYC
     if (value === "NYC") {
-      $("body").attr("class","nyc");
+      $("body").attr("class","nyc")
+    };
     //if SF is selected background changes to SF
     else if (value === "SF") {
-      $("body").attr("class","sf");
+      $("body").attr("class","sf")
+    };
     //if LA is selected background changes to LA
     else if (value === "LA") {
-      $("body").attr("class","la");
+      $("body").attr("class","la")
+    };
       //if Austin is selected background changes to LA
       else if (value === "ATX") {
-        $("body").attr("class","austin");
+        $("body").attr("class","austin")
+      };
       //if Sydney is selected background changes to Sydney
       else if (value === "SYD") {
-      $("body").attr("class","sydney");
-    }
-    }
-    }
-  })
+      $("body").attr("class","sydney")
+    };
+});
+});
 
 //
 //
