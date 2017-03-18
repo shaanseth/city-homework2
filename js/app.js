@@ -1,7 +1,7 @@
 //wait for the DOM elements to load before executing
 $(document).ready(function() {
   //wait for an item on dropdown menu to be clicked
-  $(".dropdown").change(function() {
+  $(".dropdown").on("click", function() {
     //prevent the click from refreshing the page
     event.preventDefault();
     //pull out value of option selected from dropdown menu
